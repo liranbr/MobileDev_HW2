@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="NestedWeights"
+
+    tools:context=".GameSensorsActivity"
+    android:id="@+id/GameSensors_LLO_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#202124">
+
+    <include layout="@layout/game_screen"
+        android:id="@+id/GameSensors_LLO_gameScreen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11" />
+
+    <LinearLayout
+        android:id="@+id/GameSensors_GLO_controls"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:paddingHorizontal="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/gameSensors_IMG_arrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAction"
+            android:soundEffectsEnabled="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:backgroundTint="#ffffff"
+            android:textColor="#4499ff"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:autoSizeTextType="uniform"
+            android:lines="1"
+            android:text="DASH" />
+
+    </LinearLayout>
+
+</LinearLayout>
